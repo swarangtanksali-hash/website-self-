@@ -147,6 +147,7 @@ body::after {
 .hero__role { margin: 18px 0 0; font-size: clamp(15px, 1.25vw, 18px); font-weight: 500; letter-spacing: -0.01em; color: var(--muted); white-space: nowrap; }
 .hero__role i { font-style: normal; color: var(--dim); margin: 0 8px; }
 .hero__role .tag-ai { color: var(--accent); }
+.hero__content, .hero__visual { min-width: 0; }
 .hero__where { display: flex; align-items: center; flex-wrap: wrap; margin: 8px 0 0; font-size: 14px; color: var(--muted); }
 .hero__where .dot { width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(62, 230, 160, 0.16); }
 .hero__where a { color: var(--accent); }
@@ -428,6 +429,8 @@ mark.kw { color: inherit; font-weight: inherit; background: none; padding: 0; }
 @media (max-width: 860px) {
   .nav__links, .nav .btn--small { display: none; }
   .nav__burger { display: block; margin-left: auto; }
+  .hero__role { white-space: normal; line-height: 1.7; }
+  .hero__role i { margin: 0 5px; }
   .nav__name { display: none; }
   .skills { grid-template-columns: repeat(2, 1fr); }
   .quals { grid-template-columns: repeat(2, 1fr); }
@@ -442,6 +445,14 @@ mark.kw { color: inherit; font-weight: inherit; background: none; padding: 0; }
 @media (max-width: 600px) {
   .awards { grid-template-columns: 1fr; }
   .skills { grid-template-columns: 1fr; }
+  .skills { gap: 10px; }
+  .skill { padding: 18px 18px 16px; }
+  .skill h3 { font-size: 17px; margin-bottom: 10px; }
+  .awards { gap: 10px; }
+  .award { display: grid; grid-template-columns: 26px 1fr; column-gap: 14px; align-items: start; padding: 16px 18px; }
+  .award svg { width: 24px; height: 24px; margin: 2px 0 0; grid-row: span 2; }
+  .award h3 { font-size: 16.5px; }
+  .award p { font-size: 13.5px; }
   .qual { padding: 18px 16px; }
   .hero { padding-top: 24px; }
   .marquee { margin-top: 74px; padding: 12px 0; }
